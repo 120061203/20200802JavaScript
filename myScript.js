@@ -42,3 +42,9 @@ const final = 0.35;
 const score =
     homework * 87 + midterm * 90 + final * 95;
 console.log("score is " + score); // 90.4
+//////////////////////////////////////
+//Strings Exercise
+let snack = 'coo';
+snack += 'kies';
+snack = snack.toUpperCase();
+console.log("I want " + snack);
