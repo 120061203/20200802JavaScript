@@ -71,3 +71,6 @@ const scores = {
     'luigi': 91
 };
 console.log("peach is " + scores['peach']); // 100
+scores.luigi = 87;
+console.log("scores.luigi is " + scores.luigi); // 87
+delete score.peach;
