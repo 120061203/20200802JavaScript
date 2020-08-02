@@ -62,3 +62,12 @@ let list = [];
 let groceries = ['milk', 'cocoa puffs'];
 groceries[1] = 'kix'; //可修改value
 console.log(groceries[1]);
+///////////////////////////////////////
+//Maps Exercise
+const prices = {};
+const scores = {
+    'peach': 100,
+    'mario': 88,
+    'luigi': 91
+};
+console.log("peach is " + scores['peach']); // 100
