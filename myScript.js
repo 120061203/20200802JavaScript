@@ -7,3 +7,11 @@ hoistedExercise();
 function hoistedExercise() {
     console.log("hoistedExercise Success");
 }
+
+printMessage("printMessage", 3);
+
+function printMessage(message, times) {
+    for (var i = 0; i < times; i++) {
+        console.log(message);
+    }
+}
