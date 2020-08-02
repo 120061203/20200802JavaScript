@@ -12,8 +12,8 @@ let elementList =
 function onClickFunction() {
     console.log('clicked');
 }
-const button = document.querySelector('button');
-button.addEventListener('click', onClickFunction);
+// const button = document.querySelector('button');
+// button.addEventListener('click', onClickFunction);
 /////////////////////////////////////////////////////
 //open present
 function openPresent(event) {
@@ -24,17 +24,29 @@ function openPresent(event) {
     // title.textContent = 'Hooray!';
 
     // image.removeEventListener('click', openPresent);
+    ///////////////////////////////////////////////////////////////////////////////
+    // const newHeader = document.createElement('h1');
+    // newHeader.textContent = 'Hooray!';
+    // const newImage = document.createElement('img');
+    // newImage.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
 
-    const newHeader = document.createElement('h1');
-    newHeader.textContent = 'Hooray!';
-    const newImage = document.createElement('img');
-    newImage.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
+    // const container = document.querySelector('#container');
+    // container.innerHTML = '';
+    // container.appendChild(newHeader);
+    // container.appendChild(newImage);
 
-    const container = document.querySelector('#container');
-    container.innerHTML = '';
-    container.appendChild(newHeader);
-    container.appendChild(newImage);
+    const image = event.currentTarget;
+    image.removeEventListener('click', openPresent);
+
+    const giftOutside = document.querySelector('#gift-outside');
+    const giftInside = document.querySelector('#gift-inside');
+    giftOutside.classList.add('hidden');
+    giftInside.classList.remove('hidden');
 }
 
-const image = document.querySelector('img');
+const image = document.querySelector('#gift-outside img');
 image.addEventListener('click', openPresent);
+
+
+// const image = document.querySelector('img');
+// image.addEventListener('click', openPresent);
