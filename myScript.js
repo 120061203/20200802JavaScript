@@ -14,4 +14,5 @@ function printMessage(message, times) {
     for (var i = 0; i < times; i++) {
         console.log(message);
     }
+    console.log("value is " + i);
 }
