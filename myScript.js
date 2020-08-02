@@ -33,4 +33,12 @@ if (x > 0) {
     const y = 10; //error y is not defined
 }
 //console.log("x is " + x);
-console.log("y is " + y);
+//console.log("y is " + y);
+///////////////////////////////////////////////////
+//Numbers Exercise
+const homework = 0.45;
+const midterm = 0.2;
+const final = 0.35;
+const score =
+    homework * 87 + midterm * 90 + final * 95;
+console.log("score is " + score); // 90.4
