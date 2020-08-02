@@ -17,13 +17,23 @@ button.addEventListener('click', onClickFunction);
 /////////////////////////////////////////////////////
 //open present
 function openPresent(event) {
-    const image = event.currentTarget;
-    image.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
+    // const image = event.currentTarget;
+    // image.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
 
-    const title = document.querySelector('h1');
-    title.textContent = 'Hooray!';
+    // const title = document.querySelector('h1');
+    // title.textContent = 'Hooray!';
 
-    image.removeEventListener('click', openPresent);
+    // image.removeEventListener('click', openPresent);
+
+    const newHeader = document.createElement('h1');
+    newHeader.textContent = 'Hooray!';
+    const newImage = document.createElement('img');
+    newImage.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
+
+    const container = document.querySelector('#container');
+    container.innerHTML = '';
+    container.appendChild(newHeader);
+    container.appendChild(newImage);
 }
 
 const image = document.querySelector('img');
