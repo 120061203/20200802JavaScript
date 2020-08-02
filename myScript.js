@@ -48,3 +48,11 @@ let snack = 'coo';
 snack += 'kies';
 snack = snack.toUpperCase();
 console.log("I want " + snack);
+/////////////////////////////////////
+//Boolean Exercise
+let isHungry = true;
+let age = 14;
+let isTeenager = age > 12 && age < 20;
+let pizza = 0;
+if (isHungry && isTeenager) { pizza++; }
+console.log("pizza is " + pizza);
