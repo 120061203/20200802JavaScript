@@ -16,8 +16,8 @@ const button = document.querySelector('button');
 button.addEventListener('click', onClickFunction);
 /////////////////////////////////////////////////////
 //open present
-function openPresent() {
-    const image = document.querySelector('img');
+function openPresent(event) {
+    const image = event.currentTarget;
     image.src = 'https://media.giphy.com/media/27ppQUOxe7KlG/giphy.gif';
     image.removeEventListener('click', openPresent);
 }
