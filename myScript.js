@@ -16,3 +16,4 @@ function printMessage(message, times) {
     }
     console.log("value is " + i);
 }
+console.log("i is " + i);
