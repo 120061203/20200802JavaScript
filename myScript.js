@@ -56,3 +56,9 @@ let isTeenager = age > 12 && age < 20;
 let pizza = 0;
 if (isHungry && isTeenager) { pizza++; }
 console.log("pizza is " + pizza);
+/////////////////////////////////////////
+//Arrays
+let list = [];
+let groceries = ['milk', 'cocoa puffs'];
+groceries[1] = 'kix'; //可修改value
+console.log(groceries[1]);
